@@ -1,7 +1,7 @@
 <?php
 include ('PDO.php');
 
-session_start(); // Starting Session
+session_start(); // Начало сессии
 $error = '';
 
 if (isset($_POST['submit'])) {

@@ -2,11 +2,13 @@
 include('PDO.php');
 
 session_start(); // Начало сессии регистрации
+
 /*$sel = "SELECT * FROM userbd.users";
 $result = $pdo->query($sel);
 echo '<pre>';
 $arr = $result->fetch(PDO::FETCH_ASSOC);
 var_dump($arr);*/
+
 $error=''; // Объявление переменной вывода сообщений о событиях
 if (isset($_POST['submit'])) {
 if (empty($_POST['username']) || empty($_POST['password'])) {
